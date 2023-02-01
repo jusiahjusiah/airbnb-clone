@@ -1,0 +1,123 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar styling */
+.App {
+  color: black;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  height: 100px;
+  padding: 20px 36px;
+
+}
+
+.nav-container > img {
+  height:40px;
+  max-width: 120px;
+
+}
+
+/* hero image and content style */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 70px;
+  padding-inline: 100px;
+
+}
+@media screen and (min-width: 1280px ){ 
+  .hero-container > img {
+    max-width: 1100px;
+    align-self: center;
+
+  }
+}
+
+  .hero-container > img {
+    padding-block-end: 60px;
+  }
+
+
+.hero-container h1 {
+  padding-block-end: 35px;
+  font-size: 60px;
+}
+
+.hero-container p {
+  padding-block-end: 15px;
+  font-size: 22px;
+  max-width: 600px;
+}
+
+/* activity cards style */
+.activity-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-inline: 100px;
+  padding-block: 25px;
+}
+
+.activity-cards {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* text over image on card style */
+
+.activity-availability {
+  position: relative;
+  text-align: center;
+}
+
+.activity-availability p {
+  position: absolute;
+  top: 8px;
+  left: 16px; 
+  background-color: white;
+  padding-inline: 18px;
+  margin-block: 5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+}
+
+.activity-availability img {
+  width: 270px;
+  height: 350px;
+}
+
+
+
+/* card rating style */
+.activity-rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.activity-rating-container p {
+  margin-inline-end: 5px;
+}
+
+.activity-rating-icon {
+  color: #FE395C;
+  font-size: 24px;
+}
+
+.activity-rating-count , .activity-rating-country {
+  color: #918E9B;
+}
